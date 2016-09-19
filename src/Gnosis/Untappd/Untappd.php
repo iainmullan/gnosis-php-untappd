@@ -115,7 +115,7 @@ class Untappd {
 		])['response'];
 	}
 
-	private function doGet($path, $query) {
+	public function doGet($path, $query) {
 	    $query['client_id'] = $this->clientId;
 	    $query['client_secret'] = $this->clientSecret;
 
