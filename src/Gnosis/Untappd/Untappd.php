@@ -129,6 +129,6 @@ class Untappd {
 		    ]
 	    );
 
-	    return $response->json();
+	    return json_decode($response->getBody(), true);
     }
 } 
